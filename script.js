@@ -17,11 +17,8 @@ function calculate() {
 
   // Calcular quantas horas por dia são necessárias para pagar a viagem em 365 dias
   const dailyEarnings = hourlyRate * hours; 
-  const daysNeeded = tripCost / dailyEarnings;
-  const hoursPerDay = daysNeeded / 365 * hours;
 
   // Exibir os resultados
-  document.getElementById('hours-needed').innerText = `${Math.floor(hoursPerDay)} h ${Math.round((hoursPerDay % 1) * 60)} min`;
   document.getElementById('value-needed').innerText = (tripCost / 365).toFixed(2);
 
   if (tripCost/365> 0.25*dailyEarnings){
@@ -32,5 +29,3 @@ function calculate() {
   document.getElementById('is-not-possible').style.display= 'none';
 }
 }
-
-
