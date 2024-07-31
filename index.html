@@ -8,8 +8,6 @@
 </head>
 <body>
     <div class="container">
-        <h2 >Data da viagem:</h2>
-        <h4>01/08/2025</h4>
         <h2>Escolha sua viagem:</h2>
         <div class="radio-group">
             <div>
@@ -25,26 +23,37 @@
                 <label for="disney"><b>Disney</b> - 10 diárias - R$ 39.586,00</label>
             </div>
             <div>
-                <input type="radio" id="disney" name="hours-type" value="39586">
-                <label for="disney"><b>Jericoacoara </b>- 7 diárias - R$ 14.203,00</label>
+                <input type="radio" id="jeri" name="hours-type" value="14203">
+                <label for="jeri"><b>Jericoacoara </b>- 7 diárias - R$ 14.203,00</label>
             </div>
         </div>
 
-        <h2 >Valor da hora de trabalho (R$/h)</h2>
+        <h2>Valor da hora de trabalho (R$/h)</h2>
         <input type="number" id="value-hour-day" placeholder="Digite o valor da sua hora de trabalho">
 
-        <h2 >Quantidade de horas trabalhadas por dia (h/dia)</h2>
+        <h2>Quantidade de horas trabalhadas por dia (h/dia)</h2>
         <input type="number" id="hours-per-day" placeholder="Digite o valor de horas de trabalho por dia">
+
+        <h2>Quando será paga a viagem:</h2>
+        <select id="time-period">
+            <option value="182">6 meses</option>
+            <option value="365">12 meses</option>
+            <option value="425">14 meses</option>
+        </select>
 
         <button onclick="calculate()">Calcular</button>
 
         <div class="results">
-            <p>Valor necessário guardar por dia (R$/dia)</p>
-            <div id="value-needed">0 dias</div>
+
+            <p>Valor necessário para guardar por dia (R$/dia)</p>
+            <div id="value-needed">0</div>
+
+            <p>Porcentagem do salário diário que seria guardado:</p>
+            <div id="percentage-needed">0%</div>
         </div>
+
         <div id="is-not-possible"></div>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
-
