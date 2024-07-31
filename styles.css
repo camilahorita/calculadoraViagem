@@ -5,7 +5,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f4f5f7; 
+  background-color: #f4f5f7;
 }
 
 .container {
@@ -15,7 +15,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 400px;
   text-align: center;
-  border: 1px solid #e0e0e0; 
+  border: 1px solid #e0e0e0;
 }
 
 h2 {
@@ -25,24 +25,13 @@ h2 {
   color: rgb(6, 44, 53);
 }
 
-input[type="number"] {
+input[type="number"], select {
   width: calc(100% - 20px);
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #f0f0f0;
   border-radius: 5px;
   font-size: 16px;
-} 
-
-button {
-  background-color: rgb(6, 44, 53);
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .radio-group {
@@ -53,8 +42,8 @@ button {
 
 .radio-group div {
   display: flex;
-  margin:5px;
-  align-content:flex-start ;
+  margin: 5px;
+  align-content: flex-start;
 }
 
 .radio-group input[type="radio"] {
@@ -75,22 +64,39 @@ button {
   border-radius: 5px;
   margin-top: 20px;
   text-align: left;
-  border: 1px solid #e0e0e0; 
+  border: 1px solid #e0e0e0;
 }
 
-#hours-needed, #value-needed {
+#hours-needed, #value-needed, #percentage-needed {
   font-weight: bold;
   font-size: 18px;
   text-align: center;
   padding: 10px;
-  background-color: rgb(6, 44, 53); 
+  background-color: rgb(6, 44, 53);
   color: #ffffff;
   border-radius: 5px;
   margin-top: 10px;
 }
 
+/* Estilos para o botão */
+button {
+  background-color: rgb(6, 44, 53);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #05526b;
+}
+
+/* Estilos para a tag div #is-not-possible */
 #is-not-possible {
-  display: none; 
+  display: none;  /* Inicialmente oculto */
   background-color: #e74c3c;
   color: #ffffff;
   padding: 10px;
@@ -99,3 +105,4 @@ button {
   font-weight: bold;
   border: 1px solid #c0392b;
 }
+
