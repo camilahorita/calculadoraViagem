@@ -11,9 +11,8 @@ function calculate() {
   const hoursPerDayInput = document.getElementById('hours-per-day');
   const hoursPerDay = parseFloat(hoursPerDayInput.value);
 
-  // Pegar o período selecionado
-  const timePeriodInput = document.getElementById('time-period');
-  const timePeriod = parseFloat(timePeriodInput.value);
+  // Pegar o período
+  const timePeriod = 365;
 
   // Verificar se os valores são válidos
   if (isNaN(tripCost) || isNaN(hourlyRate) || hourlyRate <= 0 || isNaN(hoursPerDay) || hoursPerDay <= 0) {
